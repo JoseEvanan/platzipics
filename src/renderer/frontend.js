@@ -1,5 +1,5 @@
 import os from 'os'
-import { setIpc, openDirectory } from './ipcRenderedEvents'
+import { setIpc, openDirectory, saveFile } from './ipcRenderedEvents'
 import { addImagesEvents, searchImagesEvent, selectEvent} from './image-ui'
 
 window.addEventListener('load', () => {
@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
   searchImagesEvent()
   selectEvent()
   buttonEvent('open-directory', openDirectory)
+  buttonEvent('save-buttom', saveFile)
 })
 
 function buttonEvent (id, func) {
