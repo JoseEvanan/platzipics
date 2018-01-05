@@ -97,6 +97,9 @@ function clearImages() {
     }
 }
 
+function print () {
+    window.print()
+}
 
 module.exports = {
     addImagesEvents: addImagesEvents,
@@ -105,5 +108,6 @@ module.exports = {
     searchImagesEvent: searchImagesEvent,
     clearImages: clearImages,
     selectEvent: selectEvent,
-    loadImages: loadImages
+    loadImages: loadImages,
+    print: print
 }
